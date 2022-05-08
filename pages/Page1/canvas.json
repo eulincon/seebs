@@ -1,0 +1,625 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1290,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "associates",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id",
+                "cod",
+                "name",
+                "bank",
+                "data_filiacao",
+                "data_desfiliacao",
+                "status",
+                "data_nascimento",
+                "rowIndex"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 14,
+              "bottomRow": 66,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.cod.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.bank.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_filiacao.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_desfiliacao.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_nascimento.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 57,
+              "primaryColumns": {
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                },
+                "id": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "id",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                },
+                "cod": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "cod",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "cod",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.cod))}}"
+                },
+                "name": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "nome",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                },
+                "bank": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "bank",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "banco",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.bank))}}"
+                },
+                "data_filiacao": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "data_filiacao",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_filiacao",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.data_filiacao))}}"
+                },
+                "data_desfiliacao": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "data_desfiliacao",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_desfiliacao",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.data_desfiliacao))}}"
+                },
+                "data_nascimento": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "data_nascimento",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_nascimento",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.data_nascimento))}}"
+                },
+                "rowIndex": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{associates.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "z42g177yeu",
+              "derivedColumns": {},
+              "rightColumn": 64,
+              "textSize": "PARAGRAPH",
+              "widgetId": "qn6ey7elf6",
+              "isVisibleFilters": true,
+              "tableData": "{{getAllAssociates.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "aniversariante",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id",
+                "cod",
+                "name",
+                "bank",
+                "data_filiacao",
+                "data_desfiliacao",
+                "status",
+                "data_nascimento",
+                "rowIndex"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 67,
+              "bottomRow": 95,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.cod.computedValue"
+                },
+                {
+                  "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.bank.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_filiacao.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_desfiliacao.computedValue"
+                },
+                {
+                  "key": "primaryColumns.data_nascimento.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "status": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "status",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                },
+                "id": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "id",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                },
+                "cod": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "cod",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "cod",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.cod))}}"
+                },
+                "name": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "name",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                },
+                "bank": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "bank",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "bank",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.bank))}}"
+                },
+                "data_filiacao": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "data_filiacao",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_filiacao",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.data_filiacao))}}"
+                },
+                "data_desfiliacao": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "data_desfiliacao",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_desfiliacao",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.data_desfiliacao))}}"
+                },
+                "data_nascimento": {
+                  "index": 7,
+                  "width": 150,
+                  "id": "data_nascimento",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "data_nascimento",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.data_nascimento))}}"
+                },
+                "rowIndex": {
+                  "index": 8,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": false,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{aniversariante.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "z42g177yeu",
+              "derivedColumns": {},
+              "rightColumn": 34,
+              "textSize": "PARAGRAPH",
+              "widgetId": "sdid3f1l7m",
+              "isVisibleFilters": true,
+              "tableData": "{{getBirthdaysOfMonth.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 14,
+              "bottomRow": 58,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "7rvg3y9bn4": {
+                  "seriesName": "",
+                  "data": "{{JSObject1.getPercentByBank()}}"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 9.59375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.7rvg3y9bn4.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "u2wbqm3lqz",
+              "rightColumn": 52,
+              "widgetId": "fa6edwj0wz",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Percentual ded associados por banco",
+              "xAxisName": "Product Line",
+              "chartType": "PIE_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_getAllActivesAssociates",
+              "name": "getAllActivesAssociates",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_getAllAssociates",
+              "name": "getAllAssociates",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_getBirthdaysOfMonth",
+              "name": "getBirthdaysOfMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [
+                "moment(Date.now()).format(\"/MM/\")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Chart1",
+          "MainContainer",
+          "aniversariante",
+          "associates"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6277db4b5984be5f5785521a_6277db4b5984be5f5785521c"
+}
