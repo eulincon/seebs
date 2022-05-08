@@ -10,11 +10,11 @@
   "publishedDefaultPageName": "Page1",
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {
-    "Page1_JSObject1.getPercentByBank": {
+    "Page1_JSObject1.getAssociatesStatistics": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page1_JSObject1.myFun2": {
+    "Page1_JSObject1.getPercentByBank": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
